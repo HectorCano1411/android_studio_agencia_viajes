@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Encabezado -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textViewNombre"
+            style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre: " />
+
+        <TextView
+            android:id="@+id/textViewApellido"
+            style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido: " />
+
+        <TextView
+            android:id="@+id/textViewRut"
+            style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RUT: " />
+
+        <TextView
+            android:id="@+id/textViewDestino"
+            style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destino: " />
+
+        <TextView
+            android:id="@+id/textViewLineaAerea"
+            style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Línea Aérea: " />
+
+        <TextView
+            android:id="@+id/textViewCiudadEmbarque"
+            style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciudad de Embarque: " />
+
+        <TextView
+            android:id="@+id/textViewValorPasaje"
+            style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor del Pasaje: " />
+
+        <TextView
+            android:id="@+id/textViewCiudadEmbarqueRegreso"
+            style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciudad de Embarque (Regreso): " />
+
+        <TextView
+            android:id="@+id/textViewValorPasajeRegreso"
+            style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor del Pasaje (Regreso): " />
+    </LinearLayout>
+
+    <!-- Contenido -->
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Agrega otros campos aquí si es necesario -->
+
+        <TextView
+            android:id="@+id/textViewTotalNeto"
+            style="@style/NormalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Neto: " />
+
+        <!-- Campo para mostrar el total del IVA -->
+        <TextView
+            android:id="@+id/textViewTotalIVA"
+            style="@style/NormalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total del IVA (19%): " />
+
+        <!-- Campo para mostrar el valor total a pagar -->
+        <TextView
+            android:id="@+id/textViewTotalPagar"
+            style="@style/NormalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Total a Pagar: " />
+
+        <!-- Botón para volver al inicio -->
+        <Button
+            android:id="@+id/btnVolverInicio"
+            style="@style/ButtonStyle"
+        android:layout_gravity="center"
+        android:text="Volver al Inicio" />
+
+    </LinearLayout>
+
+</RelativeLayout>
